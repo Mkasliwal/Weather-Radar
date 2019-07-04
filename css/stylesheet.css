@@ -1,0 +1,89 @@
+form
+{
+	padding: 60px;
+	box-sizing: border-box;
+	box-shadow: 
+}
+
+
+input[type="text"], input[type="password"]
+{
+  background-color: #f1f1f1;
+  width: 20%;
+  margin: 20px 0 0 -4px;
+  padding: 11px 11px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+
+input[type="checkbox"]
+{
+	margin: 0 0 0 10px;
+}
+
+.newarea
+{
+	padding: 0 100px;
+	margin: auto;
+}
+
+.submit:hover
+{
+	opacity: 0.8;
+}
+
+.submit
+{
+	background-color: #3d66ce;
+	color: white;
+	cursor: pointer;
+	border-radius: 20px;
+	border: none;
+	padding: 11px;
+	margin: 10px 0 0 4px;
+	width: 100px;
+}
+
+
+.gmail:hover
+{
+	opacity: 0.8;
+}
+.gmail
+{
+	background-color: #dd4b39;
+	color: white;
+	padding: 11px;
+	margin: 25px 0 0 4px;
+	cursor: pointer;
+	border: none;
+	width: 13%;
+	border-radius: 20px;
+}
+
+.fb:hover
+{
+	opacity: 0.8;
+}
+
+.fb
+{
+  background-color: #3B5998;
+  color: white;
+  padding: 11px;
+  margin: 25px 0 0 12px;
+  border: none;
+  cursor: pointer;
+  width: 13%;
+  border-radius: 20px;
+}
+
+.logo
+{
+	float: right;
+	margin: 50px 300px 0 0;
+}
+
+

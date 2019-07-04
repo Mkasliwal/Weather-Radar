@@ -1,0 +1,73 @@
+body
+{
+	margin: 0;
+	width: 100%;
+}
+
+.navbar
+{
+	overflow: hidden;
+	background-color: white;
+}
+.navbar a
+{
+	padding: 10px 20px;
+	float: left;
+	text-align: center;
+	display: block;
+	color: #3e3e3e;
+	text-decoration: none;
+}
+
+.navbar a:hover
+{
+	background-color: #3e3e3e;
+	color: white;
+	transition: 0.4s;
+}
+
+input[type="Search"]
+{
+	padding-top: 5px;
+	margin: 9px 15px;
+	border: 1.40px solid;
+	border-color: #888;
+	border-radius: 10px;
+	float: right;
+	text-decoration: none;
+}
+
+.footermain
+{
+	width: auto;
+	padding: 80px;
+	text-align: center;
+	margin-top: 45%;
+	margin-bottom: auto;
+	background-color: #eae9e9;
+}
+
+.con
+{
+	text-align: left;
+	font-size: 12px;
+}
+
+.soc
+{
+	text-align: left;
+	margin-left: 250px;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.links
+{
+	text-decoration: none;
+}
+
+/*.button
+{
+	margin: 9px 20px;
+	float: right;
+}*/

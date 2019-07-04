@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/signup.css">
+<link rel="shortcut icon" href="image/shortcut.png"/>
+<body>
+
+<!-- ====== FORM ======== -->
+<form class="form2">
+
+	<div class="layout">
+		<p id="container">Create Your Account</p>
+		<label for="name" style="margin: 17px"> Name<em style="color: red">*</em></label> <input type="text" name="name" placeholder="What do you go by?" required="" style= "width: 26%">
+
+		<label for="last name" style="margin: 20px"> Last name<em style="color: red">*</em></label> <input type="text" name="last name" placeholder="Last name" required="" style="width: 26%"><br><br>
+
+		<!-- EMAIL VALIDATION -->
+		<script type="text/javascript">
+
+		function validateEmail(email) 
+		{
+  		var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  		return re.test(email);
+		}
+
+		function validate() 
+		{
+
+  		var $result = $("#result");
+  		var email = $("#email").val();
+  		$result.text("");
+
+  		if (validateEmail(email)) 
+  			{
+    			$result.text(email + " is valid :)");
+    			$result.css("color", "green");
+  			} 
+  		else 
+  		{
+    		$result.text(email + " is not valid :(");
+    		$result.css("color", "red");
+  		}
+  			return false;
+		}
+</script>
+
+		<label for="email" style="margin: 17px"> E-mail<em style="color: red">*</em></label> <input type="email" name="mail_add" placeholder="E-mail" required="" style="width: 26%">
+
+		<label for="psw" style="margin: 20px"> Password<em style="color: red">*</em></label> <input type="password" name="psw" placeholder="password" style="width: 26%">
+		<br><br>
+
+		<!--- VALIDATE PHONE NUMBER --->
+
+		<script type="text/javascript">
+			
+			function validatePhone(phone) {
+    var error = "";
+    var stripped = phone.replace(/[\(\)\.\-\ ]/g, '');
+
+   if (stripped == "") {
+        error = "You didn't enter a phone number.";
+    } else if (isNaN(parseInt(stripped))) {
+        phone = "";
+        error = "The phone number contains illegal characters.";
+
+    } else if (!(stripped.length == 10)) {
+        phone = "";
+        error = "The phone number is the wrong length. Make sure you included an area code.\n";
+    }
+}
+		</script>
+
+		<label for="conpsw" style="margin: 17px"> Phone Number<em style="color: red">*</em></label> <input type="text" name="phonenumber" placeholder="Phone Number" required="" style= "margin: 17px 0 0 -3px"><br><br>
+
+		<label for="nation" style="margin: 17px"> Nationality
+			<select name="Nations"  class="optionselect0">
+				<option value="India">India</option>
+				<option value="China">China</option>
+				<option value="Pakistan">Pakistan</option>
+				<option value="Nepal">Nepal</option>
+				<option value="United States">United States</option>
+				<option value="Russia">Russia</option>
+				<option value="Bhutan">Bhutan</option>
+				<option value="Mayanmar">Mayanmar</option>
+				<option value="France">France</option>
+
+			</select>
+		</label>
+
+		<label for="State" style="margin: -12px"> State</label>
+		<select class="optionselect2">
+			<option value=""></option>
+		</select>
+
+		<label for="locality" style="margin: 19px"> Locality </label>
+		<select class="optionselect3">
+			<option value=""></option>
+		</select>
+		<!-- ===== BUTTON ===== -->
+			<div>
+				<button class="button" onclick= "return validate(); validatePhone();"><b> Submit</b></button>
+			</div>
+	</div>
+	
+</form>
+
+</body>
+</html>

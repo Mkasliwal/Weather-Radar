@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/mayur/Desktop/Web/login.html -->
+<html>
+<head>
+<title>Login</title>
+
+<!-- CSS ============= -->
+<link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+<link rel="shortcut icon" href="image/shortcut.png"/>
+</head>
+<body style="background-image: url(image/banner.png); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed; font-family: sans-serif; ">
+
+<!-- ======== LOGO ======== -->
+<div class="logo">
+		<img srcset="image/logo2.png">
+	</div>
+
+<!-- ========= BODY ======== -->	
+		<!-- FORM ============= -->
+	<form action="file:///C:/Users/mayur/Desktop/Web/login.php" method="post">
+		<div class="box-model">
+			<div class="data">
+		<label for="uname" style="margin: 5px"><span style="color: #dd4b39">Email*</span></label><br>
+		<input type="text" name="uname" placeholder="Enter Your Username" required=""><br><br>
+		<label for="psw" style="margin: 5px"><span style="color: #dd4b39">Password </span><a href="" style="font-size: 13px" "color: #f1f1f1"> forgot?</a></label><br>
+		<input type="password" name="pwd" placeholder="Enter Your Password"><br><br>
+			</div>
+
+		<button type="button" class="submit">Next</button>
+		<label>
+			<input type="checkbox" checked="checked" name="remember"><span style="font-size: 14px">Remember me</span></span>
+		</label>
+		</div>
+
+		<!-- ============ VIA GMAIL OR FACEBOOK ============ -->
+		<div class="box-model">
+		<button type="button" class="gmail"><span style="font-size: 12px">Sign in with </span><b>Google</b></button>
+		<button type="button" class="fb"><a href="https://en-gb.facebook.com/login/"></a><span style="font-size: 12px">Sign in with </span><b>Facebook</b></button>
+		</div>
+		<p style="color: #9a9898"><span style="font-size: 14px">Not a member? </span><a href="signup.html" target="_blank">Sign-up</a></p>
+	</form>
+</body>
+</html>

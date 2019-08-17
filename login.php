@@ -3,7 +3,7 @@ $servername = localhost;
 $username = 'root';
 $password = "";
 
-$con = musqli_connect($servername, $username, $password);
+$con = mysqli_connect($servername, $username, $password);
 
 if(!$con)
 {
